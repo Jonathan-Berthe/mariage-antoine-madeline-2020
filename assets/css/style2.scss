@@ -1,0 +1,1049 @@
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('../fonts/Calligraffiti-webfont.eot');
+    src: url('../fonts/Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Calligraffiti-webfont.woff') format('woff'),
+         url('../fonts/Calligraffiti-webfont.ttf') format('truetype'),
+         url('../fonts/Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lovely';
+    src: url('../fonts/Lovely_Valentine.eot');
+    src: url('../fonts/Lovely_Valentine.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lovely_Valentine.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html{
+    cursor:url('../images/cursor_coeur.gif'), auto;
+    font-size: 100%;
+}
+
+body{
+    background: url('../images/rodellar4_leg.png') no-repeat center fixed #888;   
+    font-size: 1em; 
+}
+
+
+/* Style de la bannière de mariage et de la bannière sélectionnée */
+
+
+#banniere{
+    position: absolute;
+    top: calc((0.63 * 712px) - ((712px - 100vh) / 2));
+    left: calc((0.35 * 1350px) - ((1350px - 100vw) / 2));
+    width: 500px;
+    height: 180px;
+    background-color:  rgba(80, 79, 79, 0.945);
+    
+    display: flex;
+    margin : auto; 
+    justify-content: space-around; 
+
+    border-radius: 20px;
+    border: 3px rgb(255, 255, 255) solid;
+}
+
+
+
+#banniere_Selec{
+
+    position: absolute;
+    top: calc((0.63 * 712px) - ((712px - 100vh) / 2));
+    left: calc((0.35 * 1350px) - ((1350px - 100vw) / 2));
+    width: 500px;
+    height: 180px;
+    background: rgba(153,0,0,0.7) ;   
+
+    display: flex;
+    border-radius: 20px;
+    border: 3px #fff solid;
+}
+
+#titre_banniere{
+    font-family: 'lovely','calligraffitiregular', Arial, Helvetica, sans-serif;
+    font-size:2.3em;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* width: 55%; /* ATTENTION !!!! pour ie11 */ 
+    margin: auto; 
+}
+
+
+
+
+#Bloc_photoClasse
+{
+    margin: auto;
+}
+
+#Bloc_photoClasseSelec
+{
+    margin: auto;
+    
+}
+
+
+#Bloc_photoClasse img 
+{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    border-radius: 50%; 
+    display: block; 
+    width: 100%;
+    height: auto; 
+ }
+
+#Bloc_photoClasseSelec img 
+{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 50%; 
+}
+
+
+
+#Bloc_photoCoeur{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+}
+
+#Bloc_photoCoeur img 
+{
+    
+    width: 50%; 
+    height: auto;
+
+ }
+
+
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* Media pour ie */
+    /* #titre_banniere{
+        width: 50%; 
+        border: red 3px solid;
+    } */
+
+   /*  #Bloc_photoClasse{
+        flex: auto;
+        border: red 3px solid;
+        margin: auto;
+    } */
+
+   /*  #Bloc_photoClasse img {    
+        height: 90%;
+        width: auto;
+        margin: auto;
+        padding: auto;
+        border: red 3px solid;
+    } */
+} 
+
+
+
+
+
+
+ .police_petite{
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+}
+
+
+/* Onglets de menu */
+
+#conteneur1
+{
+    background-color: rgba(128, 128, 128,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.5 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.15 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 100px;
+    min-height: 10px;
+    border-radius: 5%;
+    border: 1px #FFFFFF solid;
+}
+
+#conteneur1Selec
+{
+    /* background-color: rgba(29, 27, 17, 0.5); */
+    background-color: rgba(153,0,0,0.85);  
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.5 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.15 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 100px;
+    min-height: 10px;
+    border-radius: 5%;
+    border: 1.5px #fff solid;
+}
+
+#conteneur2
+{
+    background-color: rgba(128, 128, 128,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.3 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.5 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 100px;
+    min-height: 10px;
+    border-radius: 5px;
+    border: 1px #FFFFFF solid;
+}
+
+#conteneur2Selec
+{
+    background-color: rgba(153,0,0,0.85);  
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.3 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.5 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 100px;
+    min-height: 10px;
+    border-radius: 5px;
+    border: 1.5px #fff solid;
+}
+
+#conteneur3
+{
+    background-color: rgba(128, 128, 128,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.32 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.75 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 120px;
+    min-height: 10px;
+    border-radius: 5px;
+    border: 1px #FFFFFF solid;
+}
+
+#conteneur3Selec
+{
+    background-color: rgba(153,0,0,0.85 );  
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: calc(0.32 * 712px - ((712px - 100vh) / 2));
+    left: calc(0.75 * 1350px - ((1350px - 100vw) / 2));
+    min-width: 120px;
+    min-height: 10px;
+    border-radius: 5px;
+    border: 1.5px #fff solid;
+}
+
+
+
+.menu{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    color:#FFF;
+}
+
+.menu a:hover{
+    /* background-color:rgb(175, 30, 30); */
+    text-decoration: underline ;
+}
+
+
+/* Compte à rebourg */
+
+
+.rebours
+{
+    width: 30%;  
+    display: flex;
+    flex-direction: column;
+    border: 1px #FFFFFF solid;
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color:  rgba(80, 79, 79, 0.945);
+    /* background: rgb(153,0,0,0.7) ;  */
+    color: #FFF;
+    border: 1.5px rgb(255, 255, 255) solid;
+    border-radius: 20px;
+}
+
+#titre_rebours
+{
+    margin:auto;
+    padding: 7px;
+    font-size: 1.2em;
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.numbers
+{
+    display: flex;
+    justify-content: space-around;
+    font-size:0.85em;
+    
+}
+
+.bloc
+{
+    text-align: center;
+    align-items: center;
+    margin: 7px;
+    padding: 7px;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 20px;
+}
+
+
+
+
+/* Responsive disign */
+
+
+@media screen and (max-width: 990px), (max-height: 570px) 
+{
+    body{
+        font-size: 0.8em; 
+    }   
+
+    #banniere{
+
+        width: 450px;
+        height: 162px;
+        top: calc((0.58 * 712px) - ((712px - 100vh) / 2));
+    }
+
+    #banniere_Selec{
+
+        width: 450px;
+        height: 162px;
+        top: calc((0.58 * 712px) - ((712px - 100vh) / 2));
+    
+    }
+    
+
+    #Bloc_photoClasse img 
+    {
+        transform: scale(0.9);
+    }
+
+    #Bloc_photoClasseSelec img 
+    {
+        transform: scale(1);
+    }
+
+    #Bloc_photoCoeur img 
+    {      
+        width: 45%; 
+        height: auto;
+    }
+
+    #conteneur1
+    {
+        padding: 12px;
+        top: calc(0.45 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.2 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 80px;
+        min-height: 8px;
+    }
+
+    #conteneur1Selec
+    {
+        padding: 12px;
+        top: calc(0.45 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.2 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 80px;
+        min-height: 8px;
+    }
+
+    #conteneur2
+    {
+        padding: 12px;
+        top: calc(0.3 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.5 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 80px;
+        min-height: 8px;
+    }
+
+    #conteneur2Selec
+    {
+        padding: 12px;
+        top: calc(0.3 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.5 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 80px;
+        min-height: 8px;
+    }
+
+    #conteneur3
+    {
+        padding: 12px;
+        top: calc(0.32 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.72 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 96px;
+        min-height: 8px;
+    }
+
+    #conteneur3Selec
+    {
+        padding: 12px;
+        top: calc(0.32 * 712px - ((712px - 100vh) / 2));
+        left: calc(0.72 * 1350px - ((1350px - 100vw) / 2));
+        min-width: 96px;
+        min-height: 8px;
+    }
+    
+    .rebours
+    {
+        width: 40%;  
+    }
+
+    
+}
+
+
+@media screen and (max-width: 850px) 
+{
+    
+    #conteneur1
+    {
+        top: 24%;
+        left: 1%;
+    }
+
+    #conteneur1Selec
+    {
+        top: 24%;
+        left: 1%;
+    }
+
+    #conteneur2
+    {
+        top: 34%;
+        left: 1%;
+    }
+
+    #conteneur2Selec
+    {
+        top: 34%;
+        left: 1%;
+    }
+
+    #conteneur3
+    {
+        top: 44%;
+        left: 1%;
+    }
+
+    #conteneur3Selec
+    {
+        top: 44%;
+        left: 1%;
+    }
+
+    .rebours
+    {
+        width: 50%;  
+    }
+
+    
+}
+
+@media screen and (max-width: 540px)
+{
+    body
+    {
+        background: url('../images/rodellar4_petit_leg.png') no-repeat fixed  #888;   
+    }
+
+    #Bloc_photoClasse img 
+    {        
+        height: 150px;
+        width: auto;
+    }
+
+    #Bloc_photoCoeur img 
+    {      
+        width: 45%; 
+        height: auto;
+    }
+
+    #Bloc_photoCoeur{
+        top: -20%;
+    }
+
+    #banniere{
+
+        width: 400px;
+        height: 155px;
+        font-size: 0.9em; 
+    }
+
+    #banniere_Selec{
+
+        width: 400px;
+        height: 155px;
+        font-size: 0.9em; 
+    }
+
+    .rebours
+    {
+        width: 80%;  
+    }
+
+
+}
+
+
+
+@media screen and (max-height: 479px) 
+{
+    
+    #conteneur1
+    {
+        top: 36%;
+        left: 10%;
+    }
+
+    #conteneur1Selec
+    {
+        top: 36%;
+        left: 10%;
+    }
+
+
+    #conteneur2
+    {
+        top: 36%;
+        left: 36%;
+    }
+
+    #conteneur2Selec
+    {
+        top: 36%;
+        left: 36%;
+    }
+
+    #conteneur3
+    {
+        top: 36%;
+        left: 67%;
+    }
+
+    #conteneur3Selec
+    {
+        top: 36%;
+        left: 67%;
+    }
+
+    
+} 
+
+
+@media screen and (max-height: 455px) 
+{
+    
+    #banniere{
+        height: 155px;
+        top: calc((0.55 * 712px) - ((712px - 100vh) / 2));
+        font-size: 0.9em; 
+    }
+
+    #banniere_Selec{
+        height: 155px;
+        top: calc((0.55 * 712px) - ((712px - 100vh) / 2));
+        font-size: 0.9em; 
+    }
+    
+   
+} 
+
+@media screen and (max-height: 400px) 
+{
+    
+    #banniere{
+        height: 145px;
+        top: calc((0.51 * 712px) - ((712px - 100vh) / 2));
+        font-size: 0.9em; 
+    }
+
+    #banniere_Selec{
+        height: 145px;
+        top: calc((0.51 * 712px) - ((712px - 100vh) / 2));
+        font-size: 0.9em; 
+    }  
+} 
+
+@media screen and (max-height: 320px) 
+{
+
+
+    #conteneur1
+    {
+        top: 4%;
+        left: 41%;
+    }
+
+    #conteneur1Selec
+    {
+        top: 4%;
+        left: 41%;
+    }
+
+
+    #conteneur2
+    {
+        top: 4%;
+        left: 70%;
+    }
+
+    #conteneur2Selec
+    {
+        top: 4%;
+        left: 70%;
+    }
+
+
+    #conteneur3
+    {
+        top: 23%;
+        left: 55%;
+    }
+
+    #conteneur3Selec
+    {
+        top: 23%;
+        left: 55%;
+    }
+
+
+    body{
+        font-size: 0.65em; 
+    }   
+
+
+    #Bloc_photoClasse img 
+    {
+        
+        height: 120px;
+        width: auto;
+    }
+
+    #Bloc_photoClasseSelec img 
+    {
+        height: 120px;
+        width: auto;
+    }
+
+
+    #banniere{
+        top: calc((0.48 * 712px) - ((712px - 100vh) / 2));
+        height: 120px;
+    }
+
+    #banniere_Selec{
+        top: calc((0.48 * 712px) - ((712px - 100vh) / 2));
+        height: 120px;
+    }
+
+    .rebours
+    {
+        width: 40%;  
+    }
+
+    #Bloc_photoCoeur img 
+    {      
+        width: 40%; 
+        height: auto;
+    }
+} 
+
+@media screen and (max-width: 410px)
+{
+
+    #Bloc_photoClasse img 
+    {
+        
+        height: 120px;
+        width: auto;
+    }  
+
+    #Bloc_photoClasseSelec img 
+    {
+        height: 120px;
+        width: auto;
+    }
+
+   #Bloc_photoCoeur{
+        top: -13%;
+    } 
+
+    #banniere{
+
+        width: 80%;
+        height: 155px;
+        left: 10%;
+        font-size: 0.8em; 
+    }
+
+    #banniere_Selec{
+
+        width: 80%;
+        height: 155px;
+        left: 10%;
+        font-size: 0.8em; 
+    }
+
+    .rebours
+    {
+        width: 90%;  
+    }
+}
+    @media screen and (max-height: 479px) and (max-width: 410px)
+{
+    
+    body{
+        font-size: 0.7em;
+    }
+    
+    #conteneur1
+    {
+        top: 24%;
+        left: 1%;
+    }
+
+    #conteneur1Selec
+    {
+        top: 24%;
+        left: 1%;
+    }
+
+    #conteneur2
+    {
+        top: 34%;
+        left: 1%;
+    }
+
+    #conteneur2Selec
+    {
+        top: 34%;
+        left: 1%;
+    }
+
+    #conteneur3
+    {
+        top: 44%;
+        left: 1%;
+    }
+
+    #conteneur3Selec
+    {
+        top: 44%;
+        left: 1%;
+    }
+
+    .rebours
+    {
+        width: 90%;  
+    }
+
+    
+} 
+
+
+/* canva  */
+
+canvas{
+    position: absolute;
+    top: 20%;
+    left: 24%;
+    border: 5px blue solid;
+}
+
+
+#navigation{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: 2px #fff solid;
+    width: 17%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    background-color:  rgba(80, 79, 79, 0.945);
+    border-radius: 20px;
+}
+
+
+#navigation li a{
+    display: block ;
+   /*  background: #c00 ; */
+    color: #fff ;
+    font: 1em 'calligraffitiregular', Arial, Helvetica, sans-serif; 
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+    padding: 4px 4px 4px 4px;
+    margin: 5px 0 5px 0;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+    border-radius: 20px;
+    background: #900 ;
+    text-decoration: underline ;
+  }
+
+
+#formulaire_google{
+    position: absolute;
+    top: calc((100vh - 80vh) / 2);
+    left: 24vw;
+    width:70vw;
+    height:80vh;   
+    /* background: rgb(153,0,0,0.7) ;  */
+    background-color:  rgba(80, 79, 79, 0.945);
+    box-shadow: 0 0 5px 5px #888;
+    border-radius: 20px;
+}
+
+#projetMariage{
+
+    position: absolute;
+    display: flex;
+    top: 55%;
+    left: 5vw;
+    width:40vw;
+    height:40vh; 
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px #888;
+    background: url('../images/Mariage.jpg')  center;  
+    background-color: rgba(80, 79, 79, 0.945);
+    background-size: cover; 
+    /* background: rgba(153,0,0,0.7) ;  */
+    border: 2px #fff;
+    
+}
+
+#projetJapon{
+    position: absolute;
+    top: 55%;
+    left: 55vw;
+    width:40vw;
+    height:40vh;   
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px #888;
+    background: url('../images/Japon.jpg')  center;  
+    background-color: rgba(80, 79, 79, 0.945);
+    background-size: cover;
+    color: #fff;
+    /* background: rgba(153,0,0,0.7) ;  */
+}
+
+#projetRuche{
+    position: absolute;
+    top: 5%;
+    left: 30vw;
+    width:40vw;
+    height:40vh; 
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px #888;
+    background: url('../images/abeilles.jpg')  center;  
+    background-color: rgba(80, 79, 79, 0.945);
+    color: rgba(34, 37, 192, 1);
+    background-size: cover;
+    /* background: rgba(153,0,0,0.7) ;  */
+}
+
+.texte_projet img{
+    position: absolute;
+    top: -10%;
+    left: 65%;
+    width: 120px;/* max(20%, 75px); */
+    height: auto; 
+}
+
+#bancaire{
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    position: absolute;
+    /* top: 45vh;
+    left: 37.5vw;
+    width: 25vw;
+    height:10vh;  */
+    top: 12vh;
+    left: 73vw; 
+    width: 25vw;
+    height: 38vh;
+    box-shadow: 0 0 5px 5px #888;
+    background-color: rgba(80, 79, 79, 0.945);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;  
+    display: flex;
+    margin : auto; 
+    justify-content: space-around;   
+}
+
+#texte_bancaire{
+    margin:auto;
+}
+
+#texte_bancaire h1{
+    margin:auto;
+    font-size: 5vw;
+}
+
+#texte_bancaire p{
+    margin:auto;
+    font-size: 2.3vw;
+}
+
+.texte_projet{
+    font-family: 'calligraffitiregular', Arial, Helvetica, sans-serif;
+    margin: 0 0 0 3%; 
+}
+
+.texte_projet h1{
+    font-size:5vw;
+}
+
+.texte_projet h2{
+    font-size: 4vw;
+}
+
+
+
+#invitation img{
+    position: absolute;  
+    width: 40vw;
+    height: auto;
+    top: 5vh;
+    left: 40vw;
+}
+
+#num_compte{
+    font-family: Helvetica, sans-serif;
+}
+
+.projet_a{
+    text-decoration: underline;
+    font-size: 0.75em;
+}
+
+.projet_a:hover, .projet_a:focus{
+    cursor:auto;
+}
+
+.projet_a span{
+    position:absolute; 
+    margin-top:23px;
+    margin-left:-35px; 
+    color:#09c;
+    font-size: 0.5em;
+    font-family: Helvetica, sans-serif;;
+    background:rgba(0,0,0,.85);
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all 0.5s;   
+    opacity:0;      
+    border-radius: 20px;    
+    z-index: 7; 
+    width: 25vw;
+}
+
+.projet_a:hover span, .projet_a:focus span{
+    transform:scale(1) rotate(0);      
+    opacity:1;  
+    cursor:auto;
+}
+
+@media screen and (min-aspect-ratio: 1/1){
+
+    #texte_bancaire h1{
+        font-size: 5vh;
+    }
+
+    #texte_bancaire p{
+        font-size: 2.3vh;
+    }
+
+    .texte_projet h1{
+        font-size:5vh;
+    }
+    
+    .texte_projet h2{
+        font-size: 4vh;
+    }
+    
+}
+
+@media screen and (max-height: 500px), (max-width: 900px){
+    #navigation{
+        top: 2%;
+        left: 2%;
+        border: 2px #fff solid;
+        width: 23%;
+    }
+
+    #formulaire_google{
+        left: 27vw;
+        width: 70vw;
+    }
+
+    .texte_projet img{
+        width: 75px;/* max(20%, 75px); */
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    
+    #projetRuche{
+        top: 19vh;
+        left: 30vw;
+        width:60vw;
+        height:31vh; 
+    }
+
+    #bancaire{
+        top: 2vh;
+        left: 30vw;
+        width:60vw;
+        height:15vh; 
+    }
+
+    #projetJapon img, #projetMariage img{
+        left: 45%;
+        top: 70%;
+    }
+
+}

@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react" // Pour REACT
+    ],
+    "plugins": [
+        // Pour gérer le lazy loading
+        "syntax-dynamic-import",
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ],
+        "react-hot-loader/babel"
+    ]
+}
